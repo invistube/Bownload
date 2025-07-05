@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Bownload</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      user-select: none;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .download-button {
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      border: none;
+      padding: 18px 48px;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 600;
+      border-radius: 50px;
+      box-shadow: 0 8px 20px rgba(238, 9, 121, 0.6);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .download-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(238, 9, 121, 0.9);
+      background: linear-gradient(45deg, #ee0979, #ff6a00);
+    }
+
+    .download-button:active {
+      transform: scale(0.98);
+      box-shadow: 0 6px 15px rgba(238, 9, 121, 0.7);
+    }
+
+    /* Small fade-in effect on load */
+    body {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bownload</h1>
+  <a href="app3643777-89ny3l.apk" class="download-button" download>
+    Download Bogle 8.6
+  </a>
+
+</body>
+</html>
