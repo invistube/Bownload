@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Bownload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
-      margin: 0;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      font-family: 'Poppins', sans-serif;
-      color: white;
       height: 100vh;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      font-family: 'Inter', sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
-      user-select: none;
+      color: white;
+    }
+
+    .container {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      width: 90%;
+      max-width: 500px;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     }
 
     .download-button {
-      background: linear-gradient(45deg, #ff6a00, #ee0979);
-      border: none;
-      padding: 18px 48px;
-      font-size: 1.5rem;
-      color: white;
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin: 12px 0;
+      font-size: 1.2rem;
       font-weight: 600;
-      border-radius: 50px;
-      box-shadow: 0 8px 20px rgba(238, 9, 121, 0.6);
-      cursor: pointer;
+      color: white;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 12px;
       text-decoration: none;
-      transition: all 0.3s ease;
-      user-select: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(255, 75, 43, 0.4);
     }
 
     .download-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(238, 9, 121, 0.9);
-      background: linear-gradient(45deg, #ee0979, #ff6a00);
+      transform: scale(1.03);
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      box-shadow: 0 8px 28px rgba(255, 75, 43, 0.6);
     }
 
     .download-button:active {
       transform: scale(0.98);
-      box-shadow: 0 6px 15px rgba(238, 9, 121, 0.7);
-    }
-
-    /* Small fade-in effect on load */
-    body {
-      animation: fadeIn 1s ease forwards;
-      opacity: 0;
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
+      box-shadow: 0 4px 12px rgba(255, 75, 43, 0.3);
     }
   </style>
 </head>
 <body>
 
-  <h1>Bownload</h1>
-  <a href="https://github.com/invistube/Bownload/releases/download/0.8.6/app3643777-89ny3l.apk" 
-     class="download-button" target="_blank" rel="noopener noreferrer" download>
-    Download Bogle 8.6
-  </a>
+  <div class="container">
+    <h1>Bownload</h1>
+
+    <a
+      class="download-button"
+      href="https://github.com/invistube/Bownload/releases/download/0.8.6/app3643777-89ny3l.apk"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download Bogle 8.6
+    </a>
+
+    <a
+      class="download-button"
+      href="https://github.com/invistube/Bownload/releases/download/1.8.7/app3657213-st92u8.apk"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Download Bogle 8.7
+    </a>
+  </div>
 
 </body>
 </html>
